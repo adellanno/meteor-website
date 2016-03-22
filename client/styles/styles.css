@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+html {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  min-width: 800px;
+}
+
+/* layout-content */
+
+.layout-wrapper {
+  width: 55%;
+  float: left;
+  height: 100vh;
+  min-width: 400px;
+}
+
+.layout-content {
+  margin-left: 5%;
+  color: white;
+}
+
+.layout-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.layout-contenth2 {
+  font-size: 40px;
+}
+
+.layout-content h3 {
+  font-size: 30px;
+}
+
+.layout-content button {
+  font-size: 25px;
+  background-color: rgba(255, 0, 0, 0);
+  border-style: solid;
+	border-top:		2px solid #a3ceda;
+	border-left:		2px solid #a3ceda;
+	border-right:		2px solid #4f6267;
+	border-bottom:		2px solid #4f6267;
+  border-color: white;
+	padding:		10px 20px !important;
+	font-weight:		bold;
+}
+
+.layout-content button a {
+  text-decoration: none;
+  color: white;
+}
+
+.layout-content button a:hover{
+  color: black;
+}
+
+.sign-in {
+  text-align: center;
+  color: white;
+}
+
+.github-link a {
+  color: white;
+}
+
+/* nav bar */
+
+.layout-nav {
+  width: 100%;
+  height: 10%;
+  background-color: rgba(100, 0, 0, 0) !important;
+}
+
+.layout-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.layout-nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: table;
+}
+
+.layout-nav ul li {
+  padding-top: 10px;
+  display: table-cell;
+  width: 33.33%;
+  text-align: center;
+}
+
+/* templates */
+
+.templates-wrapper {
+  width: 45%;
+  float: left;
+  height: 100vh;
+  color: white;
+  text-align: justify;
+}
+
+/* about */
+
+.profile-pic {
+  margin-top: 15px;
+  height: 150px;
+  width: 150px;
+  float: left;
+  padding-left: 15px;
+}
+
+.about-text {
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.about-divider {
+  margin-top: 40px;
+  width: 94%;
+  border-color: white;
+}
+
+.about-titles {
+  font-size: 18px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+/* education */
+
+.education-wrapper {
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.education-list {
+  list-style-type: none;
+}
+
+/* contact */
+
+.contact-wrapper {
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+<template name="education">
+  <div class="education-wrapper">
+    <h3>BA History at University of Sussex</h3><br><br>
+    <h3>12 week coding course at Makers Academy where I learnt the following technologies:</h3>
+    <ul class="education-list">
+      {{#each education}}
+        <li>{{name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

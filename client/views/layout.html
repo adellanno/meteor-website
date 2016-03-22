@@ -1,0 +1,43 @@
+<template name="layout">
+
+  {{#if currentUser}}
+
+    <div class="container">
+
+      <!-- layout content-->
+
+      <div class="layout-wrapper">
+        <div class="layout-content">
+          <h4>Hello {{currentUser.username}}!</h4>
+          <h1>Anthony Dell'Anno</h1>
+          <h2>Junior Developer</h2>
+          <h3 class="github-link"><a href='https://github.com/adellannoGithub'>Github</a></h3>
+          <br>
+          <button><a href="/CV-Anthony-Dellanno.pdf">Download Resume</a></button>
+        </div>
+      </div>
+
+      <div class="templates-wrapper"> <!-- templates -->
+        <div class="templates">
+          <div class="layout-nav"> <!-- nav bar -->
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/education">Education</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          {{> yield}}
+        </div>
+      </div>
+    </div>
+
+  {{else}}
+
+    <div class="sign-in">
+      <h1>Please Sign In </h1>
+      {{> loginButtons}}
+    </div>
+
+  {{/if}}
+
+</template>
